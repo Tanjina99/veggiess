@@ -1,0 +1,113 @@
+.products {
+    padding: 50px;
+}
+
+.product-heading {
+    font-size: 40px;
+
+    @include smMaxBreakPoint { 
+        font-size: 20px;
+    }
+    
+}
+   
+h5 {
+    color: $secondaryColor;
+    font-size: 10px;
+}
+h6 {
+    color: $secondaryColor;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 30px; 
+  }
+
+.headerbtn-cls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+
+    @include smMaxBreakPoint { 
+        padding: 0;
+    }
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+.middle {
+    padding: 10px;
+    padding-top: 20px;
+    height: 180px;
+}
+  
+.negetive {
+    color: white;
+    border-radius: 8px;
+    padding: 5px 10px;
+    background-color: red;
+  }
+
+.stars {
+    display: flex;
+    justify-content: start;
+}
+
+.orange-star {
+    color: orange;
+    font-size: 15px;
+    text-align: left;
+    padding: 3px;
+}
+
+.grey-star {
+    color: lightslategray;
+}
+
+.bottom {
+    font-size: 15px;
+    text-align: left;
+    padding: 3px;
+    color: black;
+}
+  
+.last-bottom {
+    font-size: 15px;
+    text-align: left;
+    padding: 3px;
+    color: #7CC000;
+}
+
+.discount {
+    color: lightgrey;
+    margin: 5px;
+}
+
+.details-section {
+    text-align: center;
+}
+
+.tomatoe img {
+    max-width: 90%;
+    max-height: 100%;
+    margin-bottom: 10px;
+    margin-bottom: 10px;
+
+}
+
+.tomatoe {
+    background-color: #fafafa;
+    padding: 20px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  }

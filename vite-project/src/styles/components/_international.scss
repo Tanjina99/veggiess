@@ -1,0 +1,77 @@
+.national {
+    background-image: url('/images/service-icon/mid-banner.png');
+    padding: 50px;
+    margin-top: 50px;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-repeat: no-repeat;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-size: contain;
+    background-position: center;
+}
+
+.national-wrapper {
+    max-width: 800px;
+    text-align: left;
+    padding-left: 200px;
+}
+
+.national-heading {
+    font-size: 30px;
+    font-weight: 900; 
+    margin-bottom: 20px;
+
+}
+
+.national-heading span {
+    color: $secondaryColor;
+    padding: 80px;
+}
+
+.national p {
+    font-size: 15px;
+    color: lightslategray;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.primary-btn {
+    margin-top: 30px;
+}
+
+
+@include smMaxBreakPoint {
+    .national {
+        justify-content: center;
+        height: auto;
+    }
+
+    .national-wrapper {
+        padding: 10px;
+    }
+
+    .national-heading {
+        font-size: 20px;
+        span {
+            padding: 10px; 
+        }
+    }
+
+    .national p {
+        font-size: 12px; 
+    }
+
+    .primary-btn {
+        margin-top: 10px; 
+    }
+}
+
+
+
+
+
+
+

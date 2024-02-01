@@ -1,0 +1,169 @@
+.organic {
+    padding: 50px;
+
+    @include smMaxBreakPoint {
+       padding: 20px;
+        }
+}
+
+.organic-heading {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.headerbtn-cls {
+    margin-bottom: 10px;
+}
+
+.headerbtn-wrap button {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.organic-container {
+    padding: 6px;
+    margin-top: 15px;
+    padding-right: 20px
+}
+
+.card-organic {
+    display: grid;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 20px;
+    margin-right: 35px;
+    // border: 1px solid #ddd;
+    border-radius: 13px;
+    padding: 0 20px;
+}
+
+.all-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.meat {
+    font-size: 12px;
+    color: #7CC000;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 25px;
+}
+
+.discount-organic {
+    color: white;
+    border-radius: 8px;
+    padding: 5px 15px;
+    background-color: red;
+    margin-left: 70px;
+}
+
+.stars-organic {
+    padding: 30px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+}
+
+.color-star {
+    color: orange;
+    font-size: 15px;
+    text-align: left;
+    padding: 3px;
+
+}
+
+.light-star {
+    color: lightslategray;
+}
+
+.vege-img img {
+    height: 100px;
+    width: 100px;
+    border-radius: 15px;
+    margin: 40px 25px;
+    object-fit: contain;
+}
+
+.item-name {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.current-price {
+    font-size: 16px;
+    color: $secondaryColor;
+}
+
+.prev-price {
+    font-size: 16px;
+    color: lightslategray;
+    padding: 10px;
+
+}
+
+.vege-text {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.prim-btn {
+    padding: 8px;
+    border: 1px solid $whiteColor;
+    border-radius: 5px;
+}
+
+.prim-btn.active {
+    background-color: $secondaryColor; 
+    color: #fff; 
+    
+}
+
+@include smMaxBreakPoint {
+    .card-organic {
+    display: grid;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    grid-template-columns: 1fr; 
+    margin-bottom: 15px; 
+    margin-right: 0; 
+    border-radius: 13px;
+    padding: 10px;
+    }
+
+    .organic-heading {
+        font-size: 24px; 
+    }
+
+    .vege-img img {
+        height: 70px; 
+        width: 90px; 
+        display: flex;
+        margin: 20px auto;
+        object-fit: contain;
+
+    }
+
+    .item-name {
+        font-size: 14px; 
+    }
+
+    .current-price,
+    .prev-price {
+        font-size: 12px; 
+        margin-left: 7px;
+    }
+
+    .vege-text {
+        font-size: 12px; 
+    }
+
+    .prim-btn {
+        padding: 5px; 
+    }
+}
+
+  

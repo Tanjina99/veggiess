@@ -1,0 +1,36 @@
+.hero {
+    // background-image: url("/images/service-icon/hero-banner.png");
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.7)), url("/images/service-icon/hero-banner.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 700px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    .hero-wrapper {
+        position: relative;
+        top: 30%;
+
+        @include smMaxBreakPoint {
+            padding: 20px;
+        }
+
+        .hero-wrapper-details {
+            margin: auto;
+
+            h1 {
+                @include smMaxBreakPoint {
+                    font-size: 24px;
+                }
+            }
+
+            p {
+                color: white;
+                max-width: 50%;
+
+                @include smMaxBreakPoint {
+                    color: gainsboro !important;
+                }
+            }
+        }
+    }
+}

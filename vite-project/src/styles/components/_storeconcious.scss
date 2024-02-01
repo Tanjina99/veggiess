@@ -1,0 +1,205 @@
+.storeConcious2-container {
+    padding: 50px 0;
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+
+        .left {
+
+            .top {
+                position: relative;
+                display: flex;
+                gap: 25px;
+
+                .first-box {
+                    background-image: url("/images/food-store/store-1.png");
+                    width: 50%;
+                    // background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: 100% 200px;
+                }
+
+                .second-box {
+                    background-image: url("/images/food-store/store-2.png");
+                    width: 50%;
+                    // background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: 100% 200px;
+                    margin-top: 35px;
+
+                }
+            }
+
+            .bottom {
+                position: relative;
+                display: flex;
+                gap: 25px;
+
+                .first-box {
+                    background-image: url("/images/food-store/store-3.png");
+                    width: 50%;
+                    // background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: 100% 200px;
+                }
+
+
+                .second-box {
+                    background-image: url("/images/food-store/store-4.png");
+                    width: 50%;
+                    // background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: 100% 200px;
+                    margin-top: 35px;
+
+                }
+            }
+
+            .top,
+            .bottom {
+                .box {
+                    height: 280px;
+                    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                    border-radius: 10px;
+
+                    .title {
+                        position: absolute;
+                        bottom: 2px;
+                        max-width: 50%;
+                        padding: 10px;
+
+                        h4 {
+                            font-size: 18px;
+                            color: black;
+                        }
+                    }
+
+                    .date-sec {
+                        position: relative;
+                        top: 5px;
+                        left: 15px;
+
+                        p {
+                            display: inline-block;
+                            background-color: $secondaryColor;
+                            padding: 7px 4px;
+                            border-radius: 7px;
+                            color: white
+                        }
+                    }
+                }
+
+                .first-box {
+                    .title {
+                        position: absolute;
+                        bottom: 40px;
+                    }
+                }
+            }
+
+            .bottom {
+                margin-top: 45px;
+            }
+        }
+
+        .right {
+            margin: auto;
+
+            small {
+                color: $secondaryColor;
+                font-size: 12px;
+            }
+
+            h1 {
+                font-weight: 700;
+            }
+
+            p {
+                color: black;
+                font-size: 18px;
+                margin-top: 15px;
+            }
+
+            .list-sections {
+                display: flex;
+                align-items: center;
+                margin-top: 30px;
+                gap: 30px;
+
+                li {
+                    margin-top: 5px;
+                }
+
+                li p {
+                    margin-top: 0 !important;
+                }
+
+                .list-img {
+                    img {
+                        max-width: 100%;
+                        object-fit: cover;
+                        width: 200px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include smMaxBreakPoint {
+    .storeConcious2-container {
+        padding: 50px 15px;
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+
+            .left,
+            .right {
+                width: 100%;
+                margin: 0;
+
+                h1 {
+                    font-size: 25px;
+                }
+
+                p {
+                    font-size: 15px;
+                }
+
+                small {
+                    font-size: 11px;
+                }
+
+                .top,
+                .bottom {
+
+                    .box {
+                        width: 100%;
+                        .title {
+                            max-width: 100%;
+
+                        .first-box,
+                        .second-box {
+                            width: 50%px;
+                            margin-top: 20px; 
+                        }
+                    h4 {
+                        font-size: 16px; 
+                    }
+                }
+                    .date-sec {
+                        p {
+                            font-size: 12px; 
+                        }
+                    }
+                }
+            }
+                .bottom {
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+}
